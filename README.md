@@ -11,7 +11,7 @@ and concepts available in the following tech stack
 
 # Backend
 * ASP.NET WEB API 2.0
-      * Swagger for API documentation
+  * Swagger for API documentation
 * Enity Framework 6.0
 * SQL Server 2016/Azure SQL 
 * NUnit and Moq for unit testing
