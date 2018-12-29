@@ -1,4 +1,4 @@
-# TravelBookingApp-ASP.NET-WebAPI-Angular
+# TravelBookingApp
 Sample Travel booking web site created for workshop. This project experiments all the latest features 
 and concepts available in the following tech stack
 
