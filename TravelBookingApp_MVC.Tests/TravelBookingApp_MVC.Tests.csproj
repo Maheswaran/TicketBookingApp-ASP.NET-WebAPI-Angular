@@ -9,8 +9,8 @@
     <ProjectGuid>{131BAD57-64D6-4287-8A3D-295C0813A651}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TicketBookingApp.Tests</RootNamespace>
-    <AssemblyName>TicketBookingApp.Tests</AssemblyName>
+    <RootNamespace>TravelBookingApp.Tests</RootNamespace>
+    <AssemblyName>TravelBookingApp.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -99,9 +99,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TicketBookingApp\TravelBookingApp_ASP.NET_MVC.csproj">
+    <ProjectReference Include="..\TravelBookingAPP_MVC\TravelBookingApp_MVC.csproj">
       <Project>{0C2EE6E1-F16E-48B9-9DFD-AE370C8DB7D0}</Project>
-      <Name>TravelBookingApp_ASP.NET_MVC</Name>
+      <Name>TravelBookingApp_MVC</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  ticketbooking_webapi_service:
-    image: ${DOCKER_REGISTRY-}ticketbookingwebapiservice
+  travelbooking_webapi_service:
+    image: ${DOCKER_REGISTRY-}travelbookingwebapiservice
     build:
-      context: ..\TicketBooking_WebAPI_Service
+      context: ..\TravelBooking_WebAPI_Service
       dockerfile: Dockerfile

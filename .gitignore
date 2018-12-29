@@ -31,3 +31,13 @@
 /TicketBookingApp_Angular/bin
 /TicketBookingApp_Angular/obj
 /.vs
+/TravelBookingApp_Angular/bin
+/TravelBookingApp_Angular/obj
+/TravelBookingAPP_MVC/bin
+/TravelBookingAPP_MVC/obj
+/TravelBookingApp_MVC.Tests/bin/Debug
+/TravelBookingApp_MVC.Tests/obj
+/TravelBooking_WebAPI_Service/bin
+/TravelBooking_WebAPI_Service/obj
+/TravelBooking_WebAPI_Service.Tests/bin/Debug
+/TravelBooking_WebAPI_Service.Tests/obj
