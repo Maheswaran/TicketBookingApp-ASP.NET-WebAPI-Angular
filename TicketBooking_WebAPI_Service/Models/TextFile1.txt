@@ -1,0 +1,7 @@
+﻿Travel Booking entities :
+
+a. User
+b. Order
+c. Payment Service
+d. Search Service
+e. Booking History

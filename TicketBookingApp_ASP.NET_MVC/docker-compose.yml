@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ticketbookingapp:
+    image: ${DOCKER_REGISTRY-}ticketbookingapp
+    build:
+      context: .\TicketBookingApp
+      dockerfile: Dockerfile

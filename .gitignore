@@ -3,3 +3,20 @@
 ################################################################################
 
 /TicketBookingApp_Angular-NIU/bin
+/TicketBookingApp_Angular-NIU/obj
+/TicketBookingApp_Angular-NIU/node_modules
+/TicketBookingApp_ASP.NET_MVC/.vs/TicketBookingApp/v15
+/TicketBookingApp_ASP.NET_MVC/bin/Debug
+/TicketBookingApp_ASP.NET_MVC/packages
+/TicketBookingApp_ASP.NET_MVC/obj
+/TicketBookingApp_ASP.NET_MVC/.vs/config
+/TicketBookingApp_ASP.NET_MVC/TicketBookingApp/bin
+/TicketBookingApp_ASP.NET_MVC/TicketBookingApp/obj
+/TicketBooking_WebAPI_Service/bin
+/TicketBooking_WebAPI_Service/obj
+/TicketBooking_WebAPI_Service/Web.Release.config
+/TicketBooking_WebAPI_Service/Web.Debug.config
+/TicketBooking_WebAPI_Service.Tests/bin/Debug
+/TicketBooking_WebAPI_Service.Tests/obj
+/TicketBookingApp_ASP.NET_MVC/TicketBookingApp.Tests/bin/Debug
+/TicketBookingApp_ASP.NET_MVC/TicketBookingApp.Tests/obj
