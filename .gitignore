@@ -20,3 +20,14 @@
 /TicketBooking_WebAPI_Service.Tests/obj
 /TicketBookingApp_ASP.NET_MVC/TicketBookingApp.Tests/bin/Debug
 /TicketBookingApp_ASP.NET_MVC/TicketBookingApp.Tests/obj
+/Docker/bin/Debug
+/Docker/obj
+/Docker/packages
+/packages
+/TicketBookingApp/bin
+/TicketBookingApp/obj
+/TicketBookingApp.Tests/bin/Debug
+/TicketBookingApp.Tests/obj
+/TicketBookingApp_Angular/bin
+/TicketBookingApp_Angular/obj
+/.vs

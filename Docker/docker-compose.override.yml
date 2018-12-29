@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  ticketbooking_webapi_service:
+    ports:
+      - "80"
+networks:
+  default:
+    external:
+      name: nat
