@@ -1,4 +1,4 @@
-# TicketBookingApp-ASP.NET-WebAPI-Angular
+# TravelBookingApp-ASP.NET-WebAPI-Angular
 Sample Travel booking web site created for workshop. This project experiments all the latest features 
 and concepts available in the following tech stack
 
