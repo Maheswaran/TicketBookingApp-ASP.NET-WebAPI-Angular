@@ -1,0 +1,28 @@
+BookTicket Application to book tickets on Bus, Train , Flight
+
+Client :
+	a. ASP.NET MVC based Application for frontend
+		i.  ASP.NET SignalR (Web Sockets)
+		ii. ASP.NET Identity 
+
+	b. Seperate application using Angular JS 		
+
+Web API :
+	ASP.NET Web API
+	EF6	
+	Deployment it on azure
+	Azure Storage
+	Security - OpenID, OAuth
+	Write UNIT Test
+
+Database :
+	Azure SQL
+
+Deployment :
+	Docker
+	
+
+Note : DO NOT FOCUS MUCH ON UI. *FOCUS ON ONLY Functionality*
+
+
+	
