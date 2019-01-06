@@ -13,16 +13,15 @@ using TicketBooking_WebAPI_Service.Models;
 
 namespace TicketBooking_WebAPI_Service.Controllers
 {
-    [EnableCorsAttribute("http://localhost:60", "*", "Get")]
+    [EnableCorsAttribute("http://localhost:4200", "*", "Get")]
     public class UsersController : ApiController
     {
         private TicketBookingServiceContext db = new TicketBookingServiceContext();
 
         // GET: api/Users
-        public IQueryable<User> GetUsers()
-
+        public IHttpActionResult GetUsers()
         {
-            return db.Users;
+            return Ok(db.Users);
         }
 
         // GET: api/Users/5
