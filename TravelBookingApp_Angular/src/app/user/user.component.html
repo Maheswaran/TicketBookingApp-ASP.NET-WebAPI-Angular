@@ -1,36 +1,18 @@
-<div>User Details</div>
-<table style="border:solid;">
-  <thead>
+<table>
     <tr>
-      <td>Name</td>
-      <td>Email</td>
-      <td>Password</td>
+      <td>First Name</td>
+      <td>Mahesh</td>
     </tr>
-  </thead>
-  <tr *ngFor="let user of users">
-    <td>{{user.UserName}}</td>
-    <td>{{user.EmailId}}</td>
-    <td>{{user.MobileNo}}</td>
-    <td><a [routerLink]="['/user/edit', user.UserId]">Edit User</a></td>
-    <td><a [routerLink]="['/user/delete',user.UserId]">Delete User</a></td>
-  </tr>
-</table>
-<div>{{errorMessage}}</div>
-<br />
-<a [routerLink]="['/user/add']">Create User</a>
-
-
-<!--<table>
-  <tr>
-    <td>Name :</td>
-    <td>{{user.UserName}}</td>
-  </tr>
-  <tr>
-    <td>email :</td>
-    <td>{{user.EmailId}}</td>
-  </tr>
-  <tr>
-    <td>mobile number :</td>
-    <td>{{user.MobileNo}}</td>
-  </tr>
-</table>-->
+    <tr>
+      <td>Last Name</td>
+      <td>Selvaraj</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>DOB</td>
+      <td>06/06/1984</td>
+    </tr>
+  </table>
