@@ -41,3 +41,6 @@
 /TravelBooking_WebAPI_Service/obj
 /TravelBooking_WebAPI_Service.Tests/bin/Debug
 /TravelBooking_WebAPI_Service.Tests/obj
+/Docker/bin/Release
+/TravelBookingApp_MVC.Tests/bin/Release
+/TravelBooking_WebAPI_Service.Tests/bin/Release

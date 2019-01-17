@@ -1,38 +1,75 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 using System.Web;
 using TicketBooking_WebAPI_Service.Models;
 
 namespace TicketBooking_WebAPI_Service.Persistance
 {
-    public class BookingOrderRepository : IRepository<BookingOrder>
-    {
-        private TicketBookingServiceContext db;
+    public class BookingOrderRepository : IRepository<BookingOrder>, IDisposable
+    {     
+        private TicketBookingServiceContext db = new TicketBookingServiceContext();
 
         public BookingOrderRepository()
         {
             
+        }      
+
+        public async Task<BookingOrder> GetBy(long id)
+        {
+            return await db.BookingOrders.FindAsync(id);
         }
 
-        public void Add()
+        public IQueryable<BookingOrder> GetAll()
         {
-            throw new NotImplementedException();
+           return db.BookingOrders;
         }
 
-        public void Delete()
+        public async Task<int> AddAsync(BookingOrder t)
         {
-            throw new NotImplementedException();
+           db.BookingOrders.Add(t);
+           return await db.SaveChangesAsync();
         }
 
-        public BookingOrder Find(int id)
+        public async Task<int> DeleteAsync(BookingOrder t)
         {
-            throw new NotImplementedException();
+            db.BookingOrders.Remove(t);
+            return await db.SaveChangesAsync();
         }
 
-        public IEnumerable<BookingOrder> FindAll()
+        public async Task<int> UpdateAsync(BookingOrder t)
         {
-            throw new NotImplementedException();
+            db.Entry(t).State = EntityState.Modified;
+            try
+            {
+              return await db.SaveChangesAsync();
+            }
+            catch(DbUpdateConcurrencyException ex)
+            {
+                throw ex;
+            }
+        }
+
+        public IQueryable<BookingOrder> GetAll(Expression<Func<BookingOrder, bool>> predicate)
+        {
+            if (predicate != null)
+            {
+
+               return db.BookingOrders.Where<BookingOrder>(predicate);
+            }
+            else
+            {
+                throw new ArgumentNullException("Predicate value must be passed to FindSingleBy<T>.");
+            }
+        }
+
+        public void Dispose()
+        {            
+            GC.SuppressFinalize(db);
         }
     }
 }

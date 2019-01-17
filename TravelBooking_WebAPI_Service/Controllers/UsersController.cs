@@ -12,18 +12,20 @@ using System.Web.Http.Description;
 using TicketBooking_WebAPI_Service.Models;
 
 namespace TicketBooking_WebAPI_Service.Controllers
-{
+{    
     [EnableCorsAttribute("http://localhost:4200", "*", "Get")]
     public class UsersController : ApiController
     {
         private TicketBookingServiceContext db = new TicketBookingServiceContext();
 
+        [HttpGet]
         // GET: api/Users
         public IHttpActionResult GetUsers()
         {
             return Ok(db.Users);
         }
 
+        [HttpGet]
         // GET: api/Users/5
         [ResponseType(typeof(User))]
         public IHttpActionResult GetUser(long id)
@@ -38,9 +40,10 @@ namespace TicketBooking_WebAPI_Service.Controllers
         }
 
         [DisableCors]
+        [HttpPut]
         // PUT: api/Users/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutUser(long id, User user)
+        public IHttpActionResult Update(long id, User user)
         {
             if (!ModelState.IsValid)
             {
@@ -73,9 +76,10 @@ namespace TicketBooking_WebAPI_Service.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
+        [HttpPost]
         // POST: api/Users
         [ResponseType(typeof(User))]
-        public IHttpActionResult PostUser(User user)
+        public IHttpActionResult Add(User user)
         {
             if (!ModelState.IsValid)
             {
@@ -88,9 +92,10 @@ namespace TicketBooking_WebAPI_Service.Controllers
             return CreatedAtRoute("DefaultApi", new { id = user.UserId }, user);
         }
 
+        [HttpDelete]
         // DELETE: api/Users/5
         [ResponseType(typeof(User))]
-        public IHttpActionResult DeleteUser(long id)
+        public IHttpActionResult Delete(long id)
         {
             User user = db.Users.Find(id);
             if (user == null)

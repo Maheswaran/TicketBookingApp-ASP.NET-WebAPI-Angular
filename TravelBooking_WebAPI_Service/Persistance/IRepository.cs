@@ -1,18 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TicketBooking_WebAPI_Service.Persistance
 {
-    interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
-        void Add();
-        void Delete();
+        Task<int> AddAsync(T t);
+        Task<int> DeleteAsync(T t);
 
-        T Find(int id);
+        Task<int> UpdateAsync(T t);
 
-        IEnumerable<T> FindAll();
+        Task<T> GetBy(long id);
+
+        IQueryable<T> GetAll();
+
+        IQueryable<T> GetAll(Expression<Func<T, bool>> predicate);
     }
 }
